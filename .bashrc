@@ -117,11 +117,6 @@ mkcd () {
     cd "$*"
 }
 
-# Define db
-db () {
-    cp "$*" ~/Dropbox/
-}
-
 # Define define
 define () {
     curl dict://dict.org/d:$1
