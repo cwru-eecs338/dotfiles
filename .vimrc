@@ -24,6 +24,7 @@ if has("autocmd")
   autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
 
   autocmd BufNewFile,BufRead *.go setfiletype go
+  autocmd BufNewFile,BufRead *.h setfiletype c
 endif
 
 " Bubble Text
