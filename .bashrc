@@ -121,3 +121,8 @@ mkcd () {
 define () {
     curl dict://dict.org/d:$1
 }
+
+# Define cwruis
+cwruis() {
+    ldapsearch -LLL -h 'ldap.case.edu' -x -b "ou=People,o=cwru.edu,o=isp" "(uid=$1)" cn mail
+}
